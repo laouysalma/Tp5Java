@@ -2,7 +2,7 @@ package com.example.tp;
 
 public class Motorise extends Vehicule {
     protected Moteur moteur;
-    protected double niveauCarburant; // litres ou kWh
+    protected double niveauCarburant; 
     protected double kmTotal = 0;
 
     public Motorise(String modele, Moteur moteur, double carburantInitial) {
@@ -16,7 +16,7 @@ public class Motorise extends Vehicule {
     }
 
     public void rouler(double km) {
-        double conso = km * 0.1; // 0.1 unité par km
+        double conso = km * 0.1; 
         if (niveauCarburant >= conso) {
             niveauCarburant -= conso;
             kmTotal += km;
